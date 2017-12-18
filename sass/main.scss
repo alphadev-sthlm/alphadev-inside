@@ -102,3 +102,28 @@ li {
 	padding-left: 0;
 	list-style-type: none;
 }
+
+blockquote {
+	position: relative;
+	font-style: italic;
+	font-size: 1.5rem;
+	opacity: 0.6;
+	padding: 2rem 0;
+	text-align: center;
+
+	&::before {
+		content: '\201C';
+		font-size: 2rem;
+		// position: absolute;
+		// top: 1rem;
+		// left: -1rem;
+	}
+
+	&::after {
+		content: '\201D';
+		font-size: 2rem;
+		// position: absolute;
+		// bottom: 1rem;
+		// right: -1rem;
+	}
+}
