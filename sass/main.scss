@@ -1,0 +1,104 @@
+$content-width: 			960px;
+$text-content-width: 		700px;
+
+$gold: 					  #f3ce4d; // #da9926;
+
+
+@import "normalize";
+@import "header";
+@import "section";
+@import "first-section";
+@import "customers";
+@import "consultant";
+@import "img-section";
+
+
+*,
+*:after,
+*::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// Global page styles
+// [1] Remove the blue flash when user clicks a link.
+// [2] Ensure the page always fills at least the entire height of the viewport.
+// [3] Prevent iOS text size adjust after orientation change, without disabling user zoom.
+// [4] Fonts on OSX will look more consistent with other systems that do not
+// render text using sub-pixel anti-aliasing.
+
+html, body {
+	background-color: #fff;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+
+	min-height: 100%; // [2]
+
+	-webkit-text-size-adjust: 100%; // [3]
+	-ms-text-size-adjust: 100%; // [3]
+
+	-webkit-font-smoothing: antialiased; // [4]
+	-moz-osx-font-smoothing: grayscale; // [4]
+}
+
+html {
+	font-size: 16px;
+
+	@media only screen and (min-width: 800px) {
+		font-size: 18px;
+	}
+
+	@media only screen and (min-width: 1000px) {
+		font-size: 20px;
+	}
+}
+
+body {
+	background-color: #fff;
+	margin: 0px;
+	line-height: 1.6rem;
+	font-family: 'Merriweather', Georgia, serif;
+	color: #232425;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Montserrat';
+	margin: 0;
+	line-height: 1em;
+}
+
+h2 {
+	font-size: 1.25rem;
+	margin-bottom: 1em;
+
+	@media only screen and (min-width: 800px) {
+		font-size: 1.5rem;
+	}
+
+	@media only screen and (min-width: 1000px) {
+		font-size: 2rem;
+	}
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+p + p {
+	margin-top: 1em;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+
+li {
+	padding-left: 0;
+	list-style-type: none;
+}

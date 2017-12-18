@@ -1,0 +1,48 @@
+
+
+.section {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+
+	@media only screen and (min-width: 800px) {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+}
+
+.section:nth-child(even) {
+	// background-color: #e7ebef;
+}
+
+.section__content {
+	max-width: $content-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section__text-content {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section__title {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 1rem;
+	z-index: 1;
+
+	@media only screen and (min-width: 800px) {
+		margin-bottom: 2rem;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		border-bottom: 0.8rem solid $gold;
+	}
+}

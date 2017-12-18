@@ -1,0 +1,49 @@
+
+.consultant {
+	display: flex;
+
+	&--img-right {
+		flex-direction: row-reverse;
+
+		.consultant__img {
+			margin-right: 0;
+			margin-left: 30px;
+		}
+	}
+}
+
+.consultant:first-of-type {
+	margin-top: 100px;
+}
+
+.consultant + .consultant {
+	margin-top: 80px;
+
+	@media only screen and (min-width: 800px) {
+		margin-top: 150px;
+	}
+}
+
+.consultant__img {
+	margin-right: 30px;
+	max-height: 300px;
+}
+
+.consultant__title {
+	font-size: 1.2rem;
+}
+
+.consultant__sub-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	color: $gold;
+}
+
+.consultant__text {
+	margin-top: 30px;
+}
+
+.consultant__text p {
+	margin-bottom: 1em;
+}

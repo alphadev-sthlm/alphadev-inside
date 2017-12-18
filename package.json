@@ -1,0 +1,14 @@
+{
+  "name": "inside_alphadev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+	  "build-css": "node-sass --include-path sass sass/main.scss public/css/main.css",
+	  "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.12.1"
+  }
+}

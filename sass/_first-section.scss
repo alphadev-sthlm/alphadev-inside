@@ -1,0 +1,115 @@
+.first-section {
+	min-height: 100%;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.first-section__text-content {
+	position: absolute;
+	z-index: 10;
+
+	@media only screen and (min-width: 800px) {
+		top: 85px;
+		left: 120px;
+	}
+}
+
+.first-section__title {
+	font-size: 80px;
+	margin-top: 0;
+
+	@media only screen and (min-width: 600px) {
+		font-size: 70px;
+	}
+
+	@media only screen and (min-width: 800px) {
+		font-size: 110px;
+		top: 85px;
+		left: 120px;
+	}
+}
+
+.first-section__title span {
+	position: relative;
+	display: inline-block;
+	color: #1a1a1a;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		border-bottom: 1.5rem solid $gold;
+	}
+}
+
+.first-section__title span:last-child {
+	transform: translateX(50%);
+}
+
+.first-section__intro {
+	max-width: 700px;
+	margin-top: 2rem;
+	font-size: 0.9rem;
+
+	@media only screen and (min-width: 800px) {
+		margin-top: 4rem;
+	}
+}
+
+.first-section__img-wrapper {
+	height: calc(100vh - 150px);
+	width: 80%;
+	margin-top: 100px;
+	margin-left: auto;
+	background-image: url('../images/front.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+// .first-section__img-wrapper::after {
+// 	content: '';
+// 	position: absolute;
+// 	z-index: 2;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+//
+// 	background: -webkit-linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25));
+// 	background: -o-linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25));
+// 	background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25));
+// }
+
+// .first-section__img {
+// 	position: absolute;
+// 	z-index: 1;
+// 	top: 120px;
+// 	right: 0;
+// 	width: 80%;
+// }
+
+// .first-section__img--one {
+// 	top: 15%;
+// 	left: 8%;
+// 	width: 400px;
+// 	transform: rotate(-10deg);
+// }
+//
+// .first-section__img--two {
+// 	top: 13%;
+// 	right: 7%;
+// 	width: 400px;
+// 	transform: rotate(8deg);
+// }
+//
+// .first-section__img--three {
+// 	top: 60%;
+// 	right: 35%;
+// 	width: 380px;
+// 	transform: rotate(5deg);
+// }

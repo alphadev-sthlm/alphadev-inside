@@ -1,0 +1,29 @@
+
+.customers__section {
+	padding-bottom: 50px;
+}
+
+.customers__list {
+	max-width: $content-width;
+	margin: auto;
+	text-align: justify;
+	font-size: 0.01px;
+
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+	}
+}
+
+.customers__list-item {
+	display: inline-block;
+	height: 70px;
+	width: 33%;
+}
+
+.customers__list-item-logo {
+	display: block;
+	height: 100%;
+	margin: auto;
+}
