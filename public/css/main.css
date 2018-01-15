@@ -408,17 +408,18 @@ form {
 .first-section__text-content {
   position: absolute;
   z-index: 10;
-  top: 15vw; }
+  top: 15vw;
+  left: 12vw; }
 
 .first-section__title {
-  font-size: 12vw;
+  font-size: 10vw;
   margin-top: 0; }
 
 .first-section__title span {
   position: relative;
   display: inline-block;
   color: white;
-  text-shadow: 0 0 10px #6d6d6d; }
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5); }
 
 .first-section__title span:last-child {
   transform: translateX(50%); }
