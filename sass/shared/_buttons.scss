@@ -1,0 +1,15 @@
+.button {
+    display: inline-block;
+    font-weight: bold;
+    font-family: Helvetica;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &--yellow {
+        border: 2px solid #f3ce4d;
+        background-color: #f3ce4d;
+        color: #FFFFFF;
+    }
+}
