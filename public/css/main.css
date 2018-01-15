@@ -586,6 +586,7 @@ body {
   margin: 0px;
   line-height: 1.6rem;
   font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Open Sans';
   color: #232425; }
 
 h1, h2, h3, h4 {
@@ -631,9 +632,5 @@ blockquote {
   line-height: 1.5em; }
   blockquote.align-left {
     text-align: left; }
-  blockquote::before {
-    content: '\201C';
-    font-size: 2rem; }
-  blockquote::after {
-    content: '\201D';
-    font-size: 2rem; }
+  blockquote span {
+    position: relative; }

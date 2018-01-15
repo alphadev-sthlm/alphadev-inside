@@ -58,6 +58,7 @@ body {
 	margin: 0px;
 	line-height: 1.6rem;
 	font-family: 'Merriweather', Georgia, serif;
+	font-family: 'Open Sans';
 	color: #232425;
 }
 
@@ -116,19 +117,24 @@ blockquote {
         text-align: left;
     }
 
-	&::before {
-		content: '\201C';
-		font-size: 2rem;
-		// position: absolute;
-		// top: 1rem;
-		// left: -1rem;
-	}
+    span {
+    	position: relative;
+    }
 
-	&::after {
-		content: '\201D';
-		font-size: 2rem;
-		// position: absolute;
-		// bottom: 1rem;
-		// right: -1rem;
-	}
+	// span::before {
+	// 	content: '\201C';
+	// 	font-size: 6rem;
+	// 	position: absolute;
+	// 	top: -1.5rem;
+	// 	left: -3rem;
+	// 	color: #ddd;
+	// }
+
+	// span::after {
+	// 	content: '\201D';
+	// 	font-size: 3rem;
+	// 	position: absolute;
+	// 	top: -1.5rem;
+	// 	right: -3rem;
+	// }
 }
